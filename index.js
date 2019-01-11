@@ -1,15 +1,9 @@
-function add (x, y) {
-    var result = x + y;
-    return result;
+function random () {
+    return Math.floor(Math.random() * 40) + 1
 }
 
-var foo = add (2 , 3);
-console.log (foo);
-
-function div (x, y) {
-    var result = x / y;
-    return result;
+if (random() >= 18) {
+    console.log ("can drink");
+} else {
+    console.log ("can not drink");
 }
-
-var bar = div (6, 4);
-console.log ( bar );
